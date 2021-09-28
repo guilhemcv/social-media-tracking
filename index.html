@@ -5,83 +5,93 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700;800&family=Varela+Round&display=swap" rel="stylesheet">
   <title>Frontend Mentor | [Challenge Name Here]</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
+<header>
+    <div class="titre">
+    <h1>Social Media Dashboard</h1>
+    <h2>Total Followers: 23,004</h2>
+    </div>
+    <div class="bouton">
+      <p class="text">Light Theme</p>
+      <label class="switch">
+      <input type="checkbox">
+      <span class="slider round"></span>
+    </label>
+    <p class="text">Dark Theme</p>
+  </div>
+    
+</header>  
 <body>
-
-  Social Media Dashboard
-  Total Followers: 23,004
-
-  Dark Mode
-
-  
-
-  @nathanf
-  1987
-  Followers
-  12 Today
-
-  @nathanf
-  1044
-  Followers
-  99 Today
-
-  @realnathanf
-  11k
-  Followers
-  1099 Today
-
-  Nathan F.
-  8239
-  Subscribers
-  144 Today
-
-
-
-  Overview - Today
-
-  Page Views
-  87
-  3%
-
-  Likes
-  52
-  2%
-
-  Likes
-  5462
-  2257%
-
-  Profile Views
-  52k
-  1375%
-
-  Retweets
-  117
-  303%
-
-  Likes
-  507
-  553%
-
-  Likes
-  107
-  19%
-
-  Total Views
-  1407
-  12%
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="reseau">
+    <div class="reseausocial" id="facebook">
+      <div class="flex">
+        <img class="logo" src="images/icon-facebook.svg">
+        <h3 class="pseudo">@nathanf</h3>
+      </div>
+      <h4 class="number">1987</h4>
+      <p>FOLLOWERS</p>
+      <div class="flex">
+        <img class="icon" src="images/icon-up.svg">
+        <h7>12 Today</p>
+      </div>
+    </div>
+    <div class="reseausocial" id="twitter">
+      <div class="flex">
+        <img class="logo" src="images/icon-twitter.svg">
+        <h3 class="pseudo">@nathanf</h3>
+      </div>
+      <h4 class="number">1044</h4>
+      <p>FOLLOWERS</p>
+      <div class="flex">
+        <img class="icon" src="images/icon-up.svg">
+        <h7>99 Today</p>
+      </div>
+    </div>
+    <div class="reseausocial" id="instagram">
+      <div class="flex">
+        <img class="logo" src="images/icon-instagram.svg">
+        <h3 class="pseudo">@realnathanf</h3>
+      </div>
+      <h4 class="number">11k</h4>
+      <p>FOLLOWERS</p>
+        <div class="flex">
+          <img class="icon" src="images/icon-up.svg">
+          <h7>1099 Today</p>
+        </div>
+    </div>
+    <div class="reseausocial" id="youtube">
+      <div class="flex">
+        <img class="logo" src="images/icon-youtube.svg">
+        <h3 class="pseudo">Nathan F.</h3>
+      </div>
+      <h4 class="number">8239</h4>
+      <p>SUBSCRIBERS</p>
+      <div class="flex">
+        <img class="icon" src="images/icon-down.svg">
+        <h7>144 Today</p>
+      </div>
+    </div>
+  </div>
+  <h2 class="titleoverview">Overview - Today</h2>
+  <div class="overview">
+    <div class="flex2"></div>
+    <div class="flex2"></div>
+    <div class="flex2"></div>
+    <div class="flex2"></div>
+    <div class="flex2"></div>
+    <div class="flex2"></div>
+    <div class="flex2"></div>
+    <div class="flex2"></div>
   </div>
 </body>
 </html>
