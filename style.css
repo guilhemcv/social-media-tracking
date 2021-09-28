@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: 'Spartan', sans-serif;
+    color: black;
 
 }
 
@@ -40,6 +41,7 @@ header h2 {
     font-weight: bold;
     font-size: 15px;
 }
+
 /* BOUTON SLIDER*/
 
 .switch {
@@ -67,7 +69,7 @@ header h2 {
     -webkit-transition: .4s;
     transition: .4s;
 }
-  
+
 .slider:before {
     position: absolute;
     content: "";
@@ -78,40 +80,40 @@ header h2 {
     background-color: white;
     -webkit-transition: .4s;
     transition: .4s;
-  }
-  
-  input:checked + .slider {
+}
+
+input:checked+.slider {
     background-color: #364F6B;
-  }
-  
-  input:focus + .slider {
-    box-shadow: 0 0 1px;     
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px;
     color: #364F6B;
     ;
-  }
-  
-  input:checked + .slider:before {
+}
+
+input:checked+.slider:before {
     -webkit-transform: translateX(35px);
     -ms-transform: translateX(35px);
     transform: translateX(35px);
-  }
-  
- 
-  .slider.round {
-    border-radius: 34px;
-  }
-  
-  .slider.round:before {
-    border-radius: 50%;
-  } 
+}
 
-  /* Fin du bouton slider */
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* Fin du bouton slider */
 
 
 .reseau {
     display: flex;
     justify-content: center;
-    height: 350px;    
+    height: 350px;
 }
 
 .logo {
@@ -126,6 +128,8 @@ header h2 {
     margin: auto 20px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
 }
 
 .reseausocial:hover {
@@ -138,6 +142,7 @@ header h2 {
 
 .reseausocial h4 {
     font-size: 40px;
+    font-weight: 900;
     text-align: center;
     margin: 20px auto 0 auto;
 }
@@ -166,11 +171,15 @@ header h2 {
 }
 
 #facebook {
-    border-top: 5px solid #118EF7;
+    border-top: solid #118EF7 5px;
+
+
 }
 
 #twitter {
-    border-top: 5px solid #12A3F3;
+    border-top: solid #12A3F3 5px;
+
+
 }
 
 #instagram {
@@ -179,10 +188,13 @@ header h2 {
     border-top-style: solid;
     border-image: linear-gradient(to right, #FFBE67, #a053df);
     border-image-slice: 1;
+
 }
 
 #youtube {
     border-top: 5px solid #C8012A;
+
+
 }
 
 .titleoverview {
@@ -191,10 +203,10 @@ header h2 {
 }
 
 .overview {
-    display: grid; 
-    grid-template-columns: 250px 250px 250px 250px; 
-    grid-template-rows: 125px 125px; 
-    gap: 40px 40px; 
+    display: grid;
+    grid-template-columns: 250px 250px 250px 250px;
+    grid-template-rows: 125px 125px;
+    gap: 40px 40px;
     margin: auto auto 70px auto;
     justify-content: center;
 }
@@ -204,9 +216,138 @@ header h2 {
 .flex2 {
 
     background-color: #F1F3FA;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border: solid 0.1px #e8e9ec;
+    border-radius: 10px;
 
 }
 
 .flex2:hover {
     background-color: #DFE3EF;
+}
+
+.like {
+    font-size: 13px;
+    font-weight: 900;
+}
+
+.haut {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0 0 20px;
+}
+
+.numberbottom {
+    margin: 0;
+}
+
+.pourcent {
+    margin: 0;
+    font-size: 13px;
+    color: #1FB589;
+}
+
+.pourcentred {
+    margin: 0;
+    font-size: 13px;
+    color: #DC414C;
+}
+
+.pour {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.bas {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+}
+
+.bas .icon {
+    margin-right: 4px;
+    padding-bottom: 5px;
+}
+
+@media screen and (max-width:1135px){
+    .overview {
+
+        grid-template-columns: 250px 250px;
+        grid-template-rows: 125px 125px 125px 125px;
+        gap: 40px 100px;
+
+    }
+    
+}
+
+@media screen and (max-width: 850px){
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 25px;
+        margin-bottom: 0px;
+    }
+    
+    header h2 {
+        margin-bottom: 30px;
+    }
+
+    .titleoverview {
+        margin: 0 auto 40px 40px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+
+
+    .overview {
+        grid-template-columns: 250px 250px;
+        grid-template-rows: 125px 125px 125px 125px;
+        gap: 40px 40px;
+
+    }
+    .reseau {
+        display: grid;
+        grid-template-columns: 250px 250px;
+        grid-template-rows: 250px 250px;
+        gap: 40px 40px;
+        justify-content: center;
+        height: 600px;
+        margin-top: 100px;
+    }
+    .reseausocial {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width:560px) {
+    header {
+        height: auto;
+        margin: 20px auto;
+    }
+    .bouton {
+        margin: 20px auto;
+    }
+    .reseau {
+        display: flex;
+        flex-direction: column;
+        height: 1200px;
+        margin: 0 auto;
+    }
+    .overview {
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+    }
+    #youtube, #instagram, #twitter, #facebook {
+        margin: auto;
+    }
+    .titleoverview {
+        margin: 40px auto;
+    }
 }
